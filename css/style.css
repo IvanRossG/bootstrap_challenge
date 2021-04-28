@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Helvetica','sans-serif';
+  background-color: #eef0f1;
 }
 
 h1, h2 {
@@ -18,10 +19,6 @@ a, a:hover {
 
 ul li {
   list-style: none;
-}
-
-body {
-  background-color: #eef0f1;
 }
 
 #header {
