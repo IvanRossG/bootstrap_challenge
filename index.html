@@ -2,68 +2,146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
-    <title>DEV Community 👩‍💻👨‍💻</title>
+  <title>DEV Community 👩‍💻👨‍💻</title>
 </head>
 
 <body>
-    <!-- OSMAR -->
-    <header id="header" class="header">
-        <div class="container d-flex align-items-center">
-            <a href="index.html" class="logo pr-2"><img src="./assets/icons/devto.svg" alt="DEV.to"
-                    class="img-fluid"></a>
+  <!-- OSMAR -->
+  <header id="header" class="header">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo pr-2"><img src="./assets/icons/devto.svg" alt="DEV.to" class="img-fluid"></a>
 
-            <form class="form-inline mr-auto">
-                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
-                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-            </form>
+      <form class="form-inline mr-auto">
+        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      </form>
 
-            <nav class="nav-menu d-lg-block">
-                <ul>
-                    <li><a href="#" class="btn-post">Write a post</a></li>
-                    <li><a href="#"><img src="./assets/icons/message.svg" alt="Messages"></a></li>
-                    <li><a href="#"><img src="./assets/icons/notification.svg" alt="Notification"></a></li>
-                    <li><a href="#" class="avatar"><img src="./assets/icons/avatar.webp" alt="Avatar"></a></li>
-                </ul>
-            </nav>
-        </div>
-
+      <nav class="nav-menu d-lg-block">
+        <ul>
+          <li><a href="#" class="btn-post">Write a post</a></li>
+          <li><a href="#"><img src="./assets/icons/message.svg" alt="Messages"></a></li>
+          <li><a href="#"><img src="./assets/icons/notification.svg" alt="Notification"></a></li>
+          <li><a href="#" class="avatar"><img src="./assets/icons/avatar.webp" alt="Avatar"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- TOÑO -->
+  <main class="col-12 col-md-8 col-lg-7">
+    <header>
+      <h2>Posts</h2>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Feed</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Week</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Month</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Year</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Infinity</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Latest</a>
+        </li>
+      </ul>
+      <select name="" id="">
+        <option value="1" selected="selected">Feed</option>
+        <option value="2">Week</option>
+        <option value="3">Month</option>
+        <option value="4">Year</option>
+        <option value="5">Infinity</option>
+        <option value="6">Latest</option>
+      </select>
     </header>
+    <article class="post most-relevant">
+      <img class="main-post" src="https://picsum.photos/1025/1/200/300" alt="main-post">
+      <div>
+        <img class="avatar" src="" alt="avatar-name">
+        <div>
+          <h3>Daniel Krupnyy</h3>
+          <p>Apr 26(1 day ago)</p>
+        </div>
+      </div>
+      <h1>What is VS Code Johnny❓ 🤔</h1>
+      <nav>
+        <li><a href="" class="discuss">#discuss</a></li>
+        <li><a href="" class="watercooler">#watercooler</a></li>
+        <li><a href="" class="webdev">webdev</a></li>
+        <li><a href="" class="js">javascript</a></li>
+      </nav>
+      <div>
+        <div>
+          <a href=""><img src="./assets/icons/heart.svg" alt="like"> 23 reactions</a>
+          <a href=""><img src="./assets/icons/comment.svg" alt="comment"> 16 comments</a>
+        </div>
+        <div>
+          <p>2 min read</p>
+          <button class="save">Save</button>
+        </div>
+      </div>
+    </article>
+    <article class="post">
+      <div>
+        <img src="" alt="" class="avatar">
+        <div>
+          <h3>Amelia Vieira Rosado</h3>
+          <p>Apr 27 (16 hours ago)</p>
+        </div>
+      </div>
+      <h2>5 blogs you shouldn't have missed last week, but did! 📣</h2>
+      <nav>
+        <li><a href="" class="watercooler">#watercooler</a></li>
+        <li><a href="" class="bestofdev">#bestofdev</a></li>
+        <li><a href="" class="icymi">icymi</a></li>
+        <li><a href="" class="writing">writing</a></li>
+      </nav>
+      <div>
+        <div>
+          <a href=""><img src="./assets/icons/heart.svg" alt="like"> 29 reactions</a>
+          <a href=""><img src="./assets/icons/comment.svg" alt="comment"> 18 comments</a>
+        </div>
+        <div>
+          <p>2 min read</p>
+          <button class="save">Save</button>
+        </div>
+      </div>
+    </article>
+  </main>
 
 
+  <!-- IVAN -->
+  <div class="col">
 
+  </div>
 
-    <!-- TOÑO -->
-    <div class="col">
+  <footer id="footer" class="footer">
 
-    </div>
+  </footer>
 
-    <!-- IVAN -->
-    <div class="col">
-
-    </div>
-
-    <footer id="footer" class="footer">
-
-    </footer>
-
-    <!-- SCRIPTS BOOTSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
+  <!-- SCRIPTS BOOTSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
