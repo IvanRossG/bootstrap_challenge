@@ -1,6 +1,23 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background-color: #eef0f1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 a, a:hover {
@@ -86,5 +103,31 @@ body {
 #header .container .nav-menu .avatar img {
   width: 35px;
   border-radius: 50%;
+}
+
+.container-lg {
+  border: 10px black solid;
+}
+
+.row {
+  border: 5px red solid;
+}
+
+.col-12 {
+  border: 5px blue solid;
+}
+
+.card {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.card-title {
+  display: inline-block;
+  margin-right: 130px;
+}
+
+.card-content {
+  border-bottom: 1px black;
 }
 /*# sourceMappingURL=style.css.map */
