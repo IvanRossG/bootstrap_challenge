@@ -11,4 +11,89 @@ h1, h2 {
   font-size: 20px;
   font-weight: bold;
 }
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  background-color: #eef0f1;
+}
+
+#header {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 1px rgba(209, 209, 209, 0.6);
+          box-shadow: 0 1px 1px rgba(209, 209, 209, 0.6);
+  height: 56px;
+}
+
+#header .container .logo img {
+  max-height: 40px;
+}
+
+#header .container .form-control {
+  width: 420px;
+}
+
+#header .container .form-control::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+#header .container .form-control:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+#header .container .form-control::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+#header .container .form-control::placeholder {
+  color: #b1b1b1;
+}
+
+#header .container .nav-menu > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .container .nav-menu a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+#header .container .nav-menu > ul li {
+  padding: 5px;
+}
+
+#header .container .nav-menu a:hover {
+  background-color: #ededed;
+  border-color: #ededed;
+}
+
+#header .container .nav-menu .btn-post {
+  background-color: #3b49df;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#header .container .nav-menu .btn-post:hover {
+  background-color: #323ec2;
+  border-radius: 5px;
+}
+
+#header .container .nav-menu .avatar img {
+  width: 35px;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
