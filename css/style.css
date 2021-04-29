@@ -96,6 +96,34 @@ ul li {
   border-radius: 50%;
 }
 
+main.posts header {
+  padding: 12px;
+}
+
+main.posts header h2.section-title {
+  font-size: 18px;
+}
+
+main.posts header select {
+  width: 90px;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* SVG background image */
+  background: url("../assets/icons/dropdown.svg") no-repeat;
+  background-size: 40px;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main.posts article.post img.main-post {
+  width: 100%;
+}
+
 .container-sm {
   border: 10px black solid;
 }
