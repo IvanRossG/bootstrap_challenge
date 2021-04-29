@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -94,5 +94,31 @@ ul li {
 #header .container .nav-menu .avatar img {
   width: 35px;
   border-radius: 50%;
+}
+
+.container-sm {
+  border: 10px black solid;
+}
+
+.row {
+  border: 5px red solid;
+}
+
+.col-3 {
+  border: 5px blue solid;
+}
+
+.card {
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 100px;
+}
+
+.card-title {
+  display: inline-block;
+}
+
+.card-content {
+  border-bottom: 1px black;
 }
 /*# sourceMappingURL=style.css.map */
