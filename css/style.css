@@ -148,6 +148,56 @@ main.posts article.post .author a img.avatar {
   width: 50%;
 }
 
+.sidebar {
+  margin-top: 15px;
+}
+
+.sidebar .links-tags ul li a {
+  display: block;
+  padding: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.sidebar .links-tags ul li a:hover {
+  background-color: #e2e4e6;
+  color: #323ebe;
+}
+
+.sidebar .links-tags ul li a img {
+  margin-right: 8px;
+}
+
+.sidebar .links-tags ul .more a {
+  padding-left: 40px;
+  color: #808080;
+}
+
+.sidebar .links-tags ul .more a:hover {
+  color: #808080;
+}
+
+.sidebar .links-tags .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sidebar .links-tags .tags a {
+  padding: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar .links-tags .tags a:hover {
+  border-radius: 5px;
+  background-color: #e6e8e8;
+}
+
 .card h5 {
   margin-top: 14px;
   margin-left: 10px;

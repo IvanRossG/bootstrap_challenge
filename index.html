@@ -17,18 +17,18 @@
 <body>
     <!-- OSMAR -->
     <header id="header" class="header">
-        <div class="container d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
             <a href="index.html" class="logo pr-2"><img src="./assets/icons/devto.svg" alt="DEV.to"
                     class="img-fluid"></a>
 
-            <form class="form-inline mr-auto">
+            <form class="form-inline mr-auto d-none d-lg-block">
                 <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
             </form>
 
             <nav class="nav-menu d-lg-block">
                 <ul>
-                    <li><a href="#" class="btn-post">Write a post</a></li>
+                    <li><a href="#" class="btn-post d-none d-lg-block">Write a post</a></li>
                     <li><a href="#"><img src="./assets/icons/message.svg" alt="Messages"></a></li>
                     <li><a href="#"><img src="./assets/icons/notification.svg" alt="Notification"></a></li>
                     <li><a href="#" class="avatar"><img src="./assets/icons/avatar.webp" alt="Avatar"></a></li>
@@ -37,14 +37,29 @@
         </div>
     </header>
 
-
-
     <div class="container">
         <div class="row">
             <!-- Osmar -->
-            <div class="col-12 col-md-4 col-lg-2 ">
+            <div class="col-12 d-none d-md-block d-lg-block col-md-4 col-lg-2 sidebar">
+                <aside class="links-tags">
+                    <nav class="mb-3">
+                        <ul>
+                            <li><a href="#"><img src="./assets/icons/home.svg" alt="Home">Home</a></li>
+                            <li><a href="#"><img src="./assets/icons/reading.svg" alt="Reading">Reading List</a></li>
+                            <li><a href="#"><img src="./assets/icons/listing.svg" alt="Listing">Listing</a></li>
+                            <li><a href="#"><img src="./assets/icons/podcast.svg" alt="Podcast">Podcast</a></li>
+                            <li><a href="#"><img src="./assets/icons/videos.svg" alt="Videos">Videos</a></li>
+                            <li><a href="#"><img src="./assets/icons/tags.svg" alt="Tags">Tags</a></li>
+                            <li class="more"><a href="#">More...</a></li>
+                        </ul>
+                    </nav>
 
+                    <header class="tags">
+                        <h2>My tags <a href="#"><img src="./assets/icons/cog.svg" alt="Config"></a></h2>
+                    </header>
+                </aside>
             </div>
+
             <!-- TOÑO -->
             <main class="posts col-12 col-md-8 col-lg-7 g-0">
                 <header class="d-flex justify-content-between  align-items-center">
@@ -154,7 +169,6 @@
             </main>
 
             <!-- IVAN -->
-
             <div class="col-3 d-none d-lg-block">
                 <div class="card">
                     <div class="card-one">

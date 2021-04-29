@@ -1,0 +1,53 @@
+.sidebar {
+    margin-top: 15px;
+
+    .links-tags {
+        ul {
+            
+            li {
+                
+                a{
+                    display: block;
+                    padding: 8px;
+                    transition: 0.3s;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: #e2e4e6;
+                        color: #323ebe;
+                    }
+
+                    img {
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .more {
+                a {
+                    padding-left: 40px;
+                    color: #808080;
+
+                    &:hover {
+                        color: #808080;
+                    }
+                }
+            }
+        }
+
+        .tags {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                padding: 8px;
+                transition: 0.3s;
+
+                &:hover {
+                    border-radius: 5px;
+                    background-color: #e6e8e8;
+                }
+            }
+        }
+    }
+}
