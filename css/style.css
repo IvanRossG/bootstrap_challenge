@@ -1,18 +1,26 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Helvetica','sans-serif';
+  background-color: #eef0f1;
+}
+
+h1, h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #202428;
 }
 
 a, a:hover {
   text-decoration: none;
+  color: #363d44;
 }
 
 ul li {
   list-style: none;
-}
-
-body {
-  background-color: #eef0f1;
 }
 
 #header {
@@ -86,5 +94,128 @@ body {
 #header .container .nav-menu .avatar img {
   width: 35px;
   border-radius: 50%;
+}
+
+main.posts header {
+  padding: 12px;
+}
+
+main.posts header h2.section-title {
+  font-size: 18px;
+}
+
+main.posts header select {
+  width: 90px;
+  height: 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  /* SVG background image */
+  background: url("../assets/icons/dropdown.svg") no-repeat;
+  background-size: 40px;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main.posts article.post {
+  border: 1px solid rgba(8, 9, 10, 0.1);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+main.posts article.post .img-container {
+  width: 100%;
+}
+
+main.posts article.post .img-container a img.main-post {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+main.posts article.post .author a {
+  display: block;
+}
+
+main.posts article.post .author a.avatar-link {
+  width: 10%;
+}
+
+main.posts article.post .author a img.avatar {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.card h5 {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.card {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.card .card-one {
+  height: 480px;
+}
+
+.card .card-two {
+  height: 490PX;
+}
+
+.card a.main-link {
+  position: absolute;
+  top: 16px;
+  left: 178px;
+}
+
+.sec-one {
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.end {
+  margin-top: 25px;
+}
+
+.tag-icon {
+  position: absolute;
+  background-color: #3b49df;
+  border-radius: 5px;
+  color: white;
+  width: 39px;
+  height: 20px;
+  text-align: center;
+  top: 78px;
+  font-size: 13px;
+}
+
+.sec-one p.linux {
+  margin-top: 37px;
+  margin-right: 5px;
+}
+
+.sec-one p.core {
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.tag-icon-two {
+  position: absolute;
+  background-color: #3b49df;
+  border-radius: 5px;
+  color: white;
+  width: 39px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  top: 344px;
+}
+
+.backend {
+  margin-top: 47px;
 }
 /*# sourceMappingURL=style.css.map */
