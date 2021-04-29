@@ -55,14 +55,14 @@ body {
           align-items: center;
 }
 
+#header .container .nav-menu > ul li {
+  padding: 5px;
+}
+
 #header .container .nav-menu a {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   border-radius: 100%;
-  padding: 5px;
-}
-
-#header .container .nav-menu > ul li {
   padding: 5px;
 }
 
