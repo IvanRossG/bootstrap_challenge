@@ -96,6 +96,11 @@ ul li {
   border-radius: 50%;
 }
 
+.card h5 {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
 main.posts header {
   padding: 12px;
 }
@@ -128,25 +133,31 @@ main.posts article.post img.main-post {
   border: 10px black solid;
 }
 
-.row {
-  border: 5px red solid;
-}
-
-.col-3 {
-  border: 5px blue solid;
-}
-
 .card {
-  margin-top: 10px;
+  margin-top: 15px;
   border-radius: 10px;
-  height: 100px;
 }
 
-.card-title {
-  display: inline-block;
+.card .card-one {
+  height: 480px;
 }
 
-.card-content {
-  border-bottom: 1px black;
+.card .card-two {
+  height: 490PX;
+}
+
+.card a.main-link {
+  position: absolute;
+  top: 16px;
+  left: 178px;
+}
+
+.sec-one {
+  margin-top: 15px;
+  margin-left: 16px;
+}
+
+.end {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
