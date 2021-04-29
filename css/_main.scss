@@ -34,17 +34,21 @@ main.posts{
                     border-radius: 10px 10px 0 0;
                 }
             }
-            
         }
         
-        div{
-            &.author{
+        .author{
+            a{
+                &.avatar-link{
+                    width: 10%;
+                }
+                display: block;                
                 img.avatar{
-                    border-radius: 50%;
-                    width: 5%;
+                    border-radius: 50%;    
+                    width: 50%;
                 }
             }
         }
+    
 
 
     }

@@ -135,9 +135,17 @@ main.posts article.post .img-container a img.main-post {
   border-radius: 10px 10px 0 0;
 }
 
-main.posts article.post div.author img.avatar {
+main.posts article.post .author a {
+  display: block;
+}
+
+main.posts article.post .author a.avatar-link {
+  width: 10%;
+}
+
+main.posts article.post .author a img.avatar {
   border-radius: 50%;
-  width: 5%;
+  width: 50%;
 }
 
 .card h5 {
