@@ -96,11 +96,6 @@ ul li {
   border-radius: 50%;
 }
 
-.card h5 {
-  margin-top: 14px;
-  margin-left: 10px;
-}
-
 main.posts header {
   padding: 12px;
 }
@@ -129,8 +124,13 @@ main.posts article.post img.main-post {
   width: 100%;
 }
 
-.container-sm {
-  border: 10px black solid;
+.container {
+  border: 5px black solid;
+}
+
+.card h5 {
+  margin-top: 14px;
+  margin-left: 10px;
 }
 
 .card {
