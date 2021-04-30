@@ -388,4 +388,41 @@ main.posts article.post .author a img.avatar {
 #footer .credits p a:hover {
   color: #323ebe;
 }
+
+.post-card {
+  height: 370px;
+}
+
+.backcolor {
+  height: 30px;
+  background: #9c7979;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.mainavatar {
+  position: absolute;
+}
+
+.mainavatar img {
+  width: 80px;
+  height: 80px;
+}
+
+.name {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+
+.boton {
+  background: #323ec2;
+  color: white;
+  width: 215px;
+  border-radius: 10px;
+}
+
+.locacion {
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
