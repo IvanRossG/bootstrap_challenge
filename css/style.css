@@ -622,4 +622,30 @@ main.selected-post .container-fluid .row .container .row section.discussion .dis
 main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .discussion-reviews div a {
   color: #64707d;
 }
+
+main.selected-post .container-fluid .row .container .row section.discussion ul.nav li a {
+  font-size: 14px;
+  color: #64707d;
+  font-weight: 500;
+}
+
+main.selected-post .container-fluid .row .container .row section.read-next div a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+main.selected-post .container-fluid .row .container .row section.read-next div div.other-post {
+  width: auto;
+}
+
+main.selected-post .container-fluid .row .container .row section.read-next div div.other-post a h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main.selected-post .container-fluid .row .container .row section.read-next div div.other-post span {
+  font-size: 14px;
+  color: #202428;
+}
 /*# sourceMappingURL=style.css.map */
