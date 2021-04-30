@@ -1,0 +1,62 @@
+#footer {
+    padding: 50px 0;
+    background-color: #d2d6db;
+
+    .nav-footer {
+        text-align: center;
+
+        ul {
+            margin: auto;
+
+            li {
+                display: inline-block;
+                padding: 10px;
+                transition: 0.3s;
+
+                a {
+                    &:hover {
+                        color: #323ebe;
+                    }
+                }
+            }
+        }
+
+        .social {
+            a {
+                margin: 0 10px;
+
+                i {
+                    font-size: 20px;
+                    color: gray;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: rgb(100, 100, 100);
+                    }
+                }
+            }
+        }
+
+        hr {
+            margin: auto;
+            width: 150px;
+        }
+    }
+
+    .credits {
+        text-align: center;
+        
+        p {
+            font-size: 14px;
+            color: rgb(95, 95, 95);
+            
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    color: #323ebe;
+                }
+            }
+        }
+    }
+}
