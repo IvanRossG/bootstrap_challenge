@@ -482,4 +482,136 @@ main.posts article.post div.reviews div button {
 .locacion {
   font-size: 12px;
 }
+
+main.selected-post .container-fluid {
+  border: 1px solid rgba(8, 9, 10, 0.1);
+}
+
+main.selected-post .container-fluid .row .header-img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header nav ul li {
+  font-size: 14px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header nav ul li a.html-hashtag {
+  color: #FFFFFF;
+  background-color: #F53900;
+  border-radius: 5px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header nav ul li a.css-hashtag {
+  color: #FFFFFF;
+  background-color: #2965F1;
+  border-radius: 5px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header nav ul li a.js-hashtag {
+  color: #000000;
+  background-color: #F7DF1E;
+  border-radius: 5px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header nav ul li a.react-hashtag {
+  color: #61DAF6;
+  background-color: #222222;
+  border-radius: 5px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header .author a.avatar-link img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-header .author .author-data {
+  font-size: 14px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-content h2 {
+  font-size: 32px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-content p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-content h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-content span.gratefulness {
+  color: #64707d;
+  font-weight: 700;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .header-discussion h2 {
+  margin-bottom: 0;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .header-discussion button {
+  border-radius: 5px;
+  border: 1.5px solid #d2d6db;
+  padding: 6px 12px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .header-discussion button:hover {
+  border-color: #99a3ad;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post {
+  margin-top: 25px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post img.avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .comments {
+  width: 80%;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-author {
+  width: 10%;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-author a {
+  font-size: 14px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content {
+  width: 80%;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .content-author {
+  font-size: 14px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .content-author a {
+  color: #64707d;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .content-author span {
+  color: #64707d;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .content-author p {
+  margin-top: 20px;
+}
+
+main.selected-post .container-fluid .row .container .row section.discussion .discussion-post .discussion-content .discussion-reviews div a {
+  color: #64707d;
+}
 /*# sourceMappingURL=style.css.map */

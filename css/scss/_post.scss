@@ -1,0 +1,202 @@
+main.selected-post{
+    .container-fluid{
+        border: 1px solid rgba(8,9,10,0.1);
+        .row{
+            
+            .header-img{
+                width: 100%;
+                border-radius: 5px 5px 0 0;
+            }
+            .container{
+                .row{
+                    section.post-header{
+                        h1{
+                            font-size: 30px;
+                            font-weight: 700;
+                        }
+                        nav{
+                            ul{
+                                li{
+                                    font-size: 14px;
+                                    a.html-hashtag{
+                                        @include hashtagTheme(#FFFFFF,#F53900)
+                                    }
+                                    a.css-hashtag{
+                                        @include hashtagTheme(#FFFFFF,#2965F1)
+                                    }
+                                    a.js-hashtag{
+                                        @include hashtagTheme(#000000,#F7DF1E)
+                                    }
+                                    a.react-hashtag{
+                                        @include hashtagTheme(#61DAF6,#222222)
+                                    }
+                                }
+                            }
+                        }
+                        .author{
+                            a.avatar-link{
+                                img{
+                                    border-radius: 50%;
+                                    width: 70%;
+                                }
+                            }
+                            .author-data{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    section.post-content{
+                        h2{
+                            font-size: 32px;
+                        }
+                        p{
+                            font-size: 1.125rem;
+                            font-weight: 500;
+                            line-height: 25px;
+                            margin-top: 10px;
+                        }
+                        h3{
+                            font-size: 1.5em;
+                            font-weight: 700;
+                        }
+                        span.gratefulness{
+                            color: #64707d;
+                            font-weight: 700;
+                        }
+                    }
+                    section.discussion{
+                        .header-discussion{
+                            h2{
+                                margin-bottom: 0;
+                            }
+                            button{
+                                border-radius: 5px;
+                                border: 1.5px solid #d2d6db;
+                                padding: 6px 12px;
+                            }
+                            button:hover{
+                                border-color: #99a3ad;
+                            }
+                        }
+                        .discussion-post{
+                            margin-top: 25px;
+                            img.avatar{
+                                border-radius: 50%;
+                                width: 30px;
+                                height: 30px;
+                            }
+                            .comments{
+                                width: 80%;
+                            }
+                            .discussion-author{
+                                width: 10%;
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                            .discussion-content{
+                                width: 80%;
+                                .content-author{
+                                    font-size: 14px;
+                                    a{
+                                        color: #64707d;
+                                    }
+                                    span{
+                                        color: #64707d;
+                                    }
+                                    p{
+                                        margin-top: 20px;
+                                    }
+                                }
+                                .discussion-reviews{
+                                    div{
+                                        a{
+                                            color: #64707d;
+                                        
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+//   header{
+//       h1{
+//         font-size: 30px;
+//       }
+//       border: 1px solid rgba(8,9,10,0.1);
+//       border-radius: 5px;
+//       margin-bottom: 0.75rem;
+//       .img-container{
+//           width: 100%;
+//           img.post-selected{
+//               width: 100%;
+//               border-radius: 5px 5px 0 0;
+//           }
+          
+//       }
+//       div.author{
+//           a{
+//               display: block;      
+//               img.avatar{
+//                   border-radius: 50%;    
+//                   width: 50%;
+//               }
+//           }
+//           a.avatar-link{
+//               width: 15%;
+//           }
+//           div{
+//               a.author-link{
+//                   font-size: 14px;
+//                   color: #4d5760;
+//                   font-weight: 500;
+//               }
+//               a.date-link{
+//                   font-size: 12px;
+//                   font-weight: 500;
+//                   color: #4d5760;
+//               }
+//           }
+//       }
+//       a.post-link{
+//           font-size: 20px;
+//       }
+//       nav{
+//           ul.nav{
+//               li{
+//                   a.nav-link{
+//                       font-size: 14px;
+//                       color: #4d5760;
+//                   }
+//               }
+//           }
+//       }
+//       div.reviews{
+//           margin-top: 10px;
+//           margin-bottom: 15px;
+//           div{
+//               a.review-link{
+//                   font-size: 14px;
+//                   margin: 10px;
+//               }
+//               a.time-link{
+//                   font-size: 12px;
+//                   margin-right: 10px;
+//               }
+//               button{
+//                   background-color: #d2d6db;
+//                   border-radius: 5px;
+//                   border: none;
+//                   padding: 4px 12px;
+//               }
+//           }
+          
+//       }
+//   }
+}
+
