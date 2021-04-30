@@ -96,8 +96,13 @@ ul li {
   border-radius: 50%;
 }
 
+main.posts {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 main.posts header {
-  padding: 12px;
+  padding: 12px 0;
 }
 
 main.posts header h2.section-title {
@@ -105,24 +110,29 @@ main.posts header h2.section-title {
 }
 
 main.posts header select {
-  width: 90px;
+  width: 85px;
   height: 40px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   /* SVG background image */
   background: url("../assets/icons/dropdown.svg") no-repeat;
-  background-size: 40px;
+  background-size: 30px;
   background-position: 100% center;
   background-repeat: no-repeat;
   background-color: #efefef;
   padding: 10px;
   border-radius: 5px;
+  border: 1px solid #b5bdc4;
+}
+
+main.posts header .active {
+  border-bottom: 3px solid #3b49df;
 }
 
 main.posts article.post {
   border: 1px solid rgba(8, 9, 10, 0.1);
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 0.75rem;
 }
 
@@ -132,20 +142,63 @@ main.posts article.post .img-container {
 
 main.posts article.post .img-container a img.main-post {
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px 5px 0 0;
 }
 
-main.posts article.post .author a {
+main.posts article.post div.author a {
   display: block;
 }
 
-main.posts article.post .author a.avatar-link {
-  width: 10%;
-}
-
-main.posts article.post .author a img.avatar {
+main.posts article.post div.author a img.avatar {
   border-radius: 50%;
   width: 50%;
+}
+
+main.posts article.post div.author a.avatar-link {
+  width: 15%;
+}
+
+main.posts article.post div.author div a.author-link {
+  font-size: 14px;
+  color: #4d5760;
+  font-weight: 500;
+}
+
+main.posts article.post div.author div a.date-link {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d5760;
+}
+
+main.posts article.post a.post-link {
+  font-size: 20px;
+}
+
+main.posts article.post nav ul.nav li a.nav-link {
+  font-size: 14px;
+  color: #4d5760;
+}
+
+main.posts article.post div.reviews {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+main.posts article.post div.reviews div a.review-link {
+  font-size: 14px;
+  margin: 10px;
+}
+
+main.posts article.post div.reviews div a.time-link {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+main.posts article.post div.reviews div button {
+  background-color: #d2d6db;
+  border-radius: 5px;
+  border: none;
+  padding: 4px 12px;
 }
 
 .sidebar {
