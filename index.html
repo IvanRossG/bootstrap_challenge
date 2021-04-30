@@ -61,27 +61,27 @@
             </div>
 
             <!-- TOÑO -->
-            <main class="posts col-12 col-md-8 col-lg-7 g-0">
-                <header class="d-flex justify-content-between  align-items-center">
-                    <h2 class="section-title">Posts</h2>
+            <main class="posts col-12 col-md-8 col-lg-7 px-0">
+                <header class="d-flex justify-content-between  align-items-center px-3 px-md-0">
+                    <h2 class="section-title mb-0">Posts</h2>
                     <ul class="nav d-none d-md-flex">
                         <li class="nav-item">
-                            <a class="nav-link p-md-2 active" href="#">Feed</a>
+                            <a class="nav-link px-md-2 active" href="#">Feed</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-md-2" href="#">Week</a>
+                            <a class="nav-link px-md-2" href="#">Week</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-md-2" href="#">Month</a>
+                            <a class="nav-link px-md-2" href="#">Month</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-md-2" href="#">Year</a>
+                            <a class="nav-link px-md-2" href="#">Year</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-md-2" href="#">Infinity</a>
+                            <a class="nav-link px-md-2" href="#">Infinity</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link p-md-2" href="#">Latest</a>
+                            <a class="nav-link px-md-2" href="#">Latest</a>
                         </li>
                     </ul>
                     <select class="d-md-none" name="" id="">
@@ -102,7 +102,7 @@
                         </a>
                     </div>
 
-                    <div class="author d-flex justify-content-start align-items-center">
+                    <div class="author d-flex justify-content-start p-3 align-items-center">
                         <a class="avatar-link" href=""><img
                                 src="https://res.cloudinary.com/practicaldev/image/fetch/s--eSljC1Ni--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/616032/f4025b37-55f0-4bc4-98b1-108f840590c9.jpeg"
                                 alt="avatar-name" class="avatar"></a>
@@ -112,20 +112,30 @@
                         </div>
                     </div>
                     <a class="post-link" href="./pages/post.html">
-                        <h1>What is VS Code Johnny❓ 🤔</h1>
+                        <h1 class="px-3">What is VS Code Johnny❓ 🤔</h1>
                     </a>
-                    <nav>
-                        <li><a href="" class="hashtag-link discuss">#discuss</a></li>
-                        <li><a href="" class="hashtag-link watercooler">#watercooler</a></li>
-                        <li><a href="" class="hashtag-link webdev">webdev</a></li>
-                        <li><a href="" class="hashtag-link js">javascript</a></li>
+                    <nav class="px-3">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#discuss</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#watercooler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#webdev</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#javascript</a>
+                            </li>
+                        </ul>
                     </nav>
-                    <div>
+                    <div class="reviews d-flex justify-content-between align-items-center px-3">
                         <div>
                             <a class="review-link" href=""><img src="./assets/icons/heart.svg" alt="like"> 23
-                                reactions</a>
+                                <span class="d-none d-md-inline  mx-2">reactions</span></a>
                             <a class="review-link" href=""><img src="./assets/icons/comment.svg" alt="comment"> 16
-                                comments</a>
+                                <span class="d-none d-md-inline mx-2">comments</span> </a>
                         </div>
                         <div>
                             <a class="time-link" href="./pages/post.html">2 min read</a>
@@ -134,7 +144,7 @@
                     </div>
                 </article>
                 <article class="post">
-                    <div class="author">
+                    <div class="author d-flex justify-content-start p-3 align-items-center">
                         <a class="avatar-link" href="">
                             <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MOacWSFh--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/3864/c6f2cf0f-a06c-4603-8a9a-56a612b9697b.png"
                                 alt="avatar-name" class="avatar">
@@ -145,20 +155,30 @@
                         </div>
                     </div>
                     <a class="post-link" href="">
-                        <h2>5 blogs you shouldn't have missed last week, but did! 📣</h2>
+                        <h2 class="px-3">5 blogs you shouldn't have missed last week, but did! 📣</h2>
                     </a>
-                    <nav>
-                        <li><a href="" class="hashtag-link watercooler">#watercooler</a></li>
-                        <li><a href="" class="hashtag-link bestofdev">#bestofdev</a></li>
-                        <li><a href="" class="hashtag-link icymi">icymi</a></li>
-                        <li><a href="" class="hashtag-link writing">writing</a></li>
+                    <nav class="px-3">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#watercooler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">>#bestofdev</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#icymi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-2 py-1" href="#">#writing</a>
+                            </li>
+                        </ul>
                     </nav>
-                    <div>
+                    <div class="reviews d-flex justify-content-between align-items-center px-3">
                         <div>
                             <a class="review-link" href=""><img src="./assets/icons/heart.svg" alt="like"> 29
-                                reactions</a>
+                                <span class="d-none d-md-inline  mx-2">reactions</span> </a>
                             <a class="review-link" href=""><img src="./assets/icons/comment.svg" alt="comment"> 18
-                                comments</a>
+                                <span class="d-none d-md-inline mx-2">comments</span> </a>
                         </div>
                         <div>
                             <a class="time-link" href="./pages/post.html">2 min read</a>
