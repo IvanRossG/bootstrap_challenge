@@ -1,5 +1,6 @@
 .post-card{
     height: 370px;
+    margin-top: 1px;
 }
 
 .backcolor{
@@ -29,6 +30,32 @@
 .locacion{
     font-size: 12px;
 }
+.s-body{
+    height: 430px;
+}
+
+@media only screen and (max-width: 1024px){
+    .name{
+        position: absolute;
+        top: 20px;
+        right: 15px
+    }  
+    
+    .boton{
+        background: #323ec2;
+        color: white;
+        width: 170px;
+        border-radius: 10px;
+    } 
+
+    .s-body{
+        height: 495px;
+    }
+}
+
+
+
+
 
 
 
