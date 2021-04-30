@@ -269,6 +269,10 @@ main.posts article.post div.reviews div button {
   height: 470PX;
 }
 
+.card .card-three {
+  height: 475px;
+}
+
 .card a.main-link {
   position: absolute;
   top: 16px;

@@ -13,6 +13,9 @@
     .card-two{
         height: 470PX;
     }
+    .card-three{
+        height: 475px;
+    }
 }
 .card a.main-link{
     position: absolute;
@@ -73,6 +76,7 @@
     text-align: center;
     top: 425px;
 }
+
 
 @media only screen and (max-width: 1024px){
     .card div.card-one{
