@@ -326,4 +326,12 @@ main.posts article.post .author a img.avatar {
     top: 545px;
   }
 }
+
+.col-3 {
+  border: blue 5px solid;
+}
+
+.card div.card-main {
+  height: 400px;
+}
 /*# sourceMappingURL=style.css.map */
