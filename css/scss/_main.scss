@@ -1,57 +1,111 @@
 main.posts{
+    padding-left: 0;
+    padding-right: 0;
     header
     {
-        padding: 12px;
+        padding: 12px 0;
         h2{
             &.section-title{
                 font-size: 18px;
             }
     
         }
+        
         select{
-            width: 90px;
+            width:85px;
             height: 40px;
             appearance: none;
             /* SVG background image */
             background: url("../assets/icons/dropdown.svg") no-repeat;
-            background-size: 40px;
+            background-size: 30px;
             background-position: 100% center;
             background-repeat: no-repeat;
             background-color: #efefef;
             padding: 10px;
             border-radius: 5px;
+            border: 1px solid #b5bdc4;
+        }
+        .active{
+            border-bottom: 3px solid #3b49df;
         }
     }
     article.post{
         border: 1px solid rgba(8,9,10,0.1);
-        border-radius: 10px;
+        border-radius: 5px;
         margin-bottom: 0.75rem;
         .img-container{
             width: 100%;
             a{
                 img.main-post{
                     width: 100%;
-                    border-radius: 10px 10px 0 0;
+                    border-radius: 5px 5px 0 0;
                 }
             }
         }
-        
-        .author{
+        div.author{
             a{
-                &.avatar-link{
-                    width: 10%;
-                }
-                display: block;                
+                display: block;      
                 img.avatar{
                     border-radius: 50%;    
                     width: 50%;
                 }
             }
+            a.avatar-link{
+                width: 15%;
+            }
+            div{
+                a.author-link{
+                    font-size: 14px;
+                    color: #4d5760;
+                    font-weight: 500;
+                }
+                a.date-link{
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #4d5760;
+                }
+            }
         }
-    
-
-
+        a.post-link{
+            font-size: 20px;
+        }
+        nav{
+            ul.nav{
+                li{
+                    a.nav-link{
+                        font-size: 14px;
+                        color: #4d5760;
+                    }
+                }
+            }
+        }
+        div.reviews{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            div{
+                a.review-link{
+                    font-size: 14px;
+                    margin: 10px;
+                }
+                a.time-link{
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+                button{
+                    background-color: #d2d6db;
+                    border-radius: 5px;
+                    border: none;
+                    padding: 4px 12px;
+                }
+            }
+            
+        }
     }
+}
 
-
+@media only screen and (min-width: 768px){
+    // .main-posts{
+    //     padding-left: 15px;
+    //     padding-right: 15px;
+    // }    
 }
