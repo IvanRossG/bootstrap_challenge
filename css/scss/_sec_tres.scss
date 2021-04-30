@@ -11,7 +11,7 @@
         height: 480px;
     }
     .card-two{
-        height: 490PX;
+        height: 470PX;
     }
 }
 .card a.main-link{
@@ -44,11 +44,10 @@
 }
 
 .sec-one p.core{
-    margin-top: 30px;
+    margin-top: 15px;
     margin-right: 20px;
 }
-
-.tag-icon-two{
+.sec-one a.tag-icon-two{
     position: absolute;
     background-color: #3b49df;
     border-radius: 5px;
@@ -57,11 +56,71 @@
     height: 20px;
     font-size: 13px;
     text-align: center;
-    top:344px;
+    top: 330px;
 }
-.backend{
-    margin-top: 47px;
+.sec-one p.php{
+    margin-top: 45px;
 }
 
+.sec-one a.tag-icon-three{
+    position: absolute;
+    background-color: #3b49df;
+    border-radius: 5px;
+    color: white;
+    width: 39px;
+    height: 20px;
+    font-size: 13px;
+    text-align: center;
+    top: 425px;
+}
 
+@media only screen and (max-width: 1024px){
+    .card div.card-one{
+        height: 530px;
 
+        .sec-one p{
+            margin-right: 15px;
+        }
+    }    
+    .card a.main-link{
+        position: absolute;
+        top: 16px;
+        left: 145px;
+    }
+
+    .card div.card-two{
+    height: 580PX;
+
+        .sec-one p.core{
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+    
+        .sec-one p.php{
+        margin-top: 45px;
+        }
+        .tag-icon-two{
+            position: absolute;
+            background-color: #3b49df;
+            border-radius: 5px;
+            color: white;
+            width: 39px;
+            height: 20px;
+            font-size: 13px;
+            text-align: center;
+            top:425px;
+
+        }
+        .tag-icon-three{
+            position: absolute;
+            background-color: #3b49df;
+            border-radius: 5px;
+            color: white;
+            width: 39px;
+            height: 20px;
+            font-size: 13px;
+            text-align: center;
+            top:545px;
+        }
+    }
+}
