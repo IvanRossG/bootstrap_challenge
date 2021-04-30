@@ -1,0 +1,5 @@
+@mixin hashtagTheme ($fcolor, $bgcolor) {
+  color: $fcolor;
+  background-color: $bgcolor;
+  border-radius: 5px;
+}
