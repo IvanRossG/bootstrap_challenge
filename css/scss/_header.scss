@@ -2,6 +2,11 @@
     background-color: #ffffff;
     box-shadow: 0 1px 1px rgba(209, 209, 209, 0.6);
     height: 56px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    overflow: hidden;
+    z-index: 1;
     // padding: 15px 0;
 
     .container {
