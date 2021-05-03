@@ -3,7 +3,7 @@ main.posts{
     padding-right: 0;
     header
     {
-        padding: 12px 0;
+        
         h2{
             &.section-title{
                 font-size: 18px;
@@ -25,14 +25,45 @@ main.posts{
             border-radius: 5px;
             border: 1px solid #b5bdc4;
         }
-        .active{
-            border-bottom: 3px solid #3b49df;
+        ul{
+            li{
+                a{
+                    margin: 0 4px;
+                    border-radius: 5px;
+                    position: relative;
+                    padding: 8px;
+                    &.active{
+                        
+                        &:after{
+                            content: '';
+                            width: calc(100% - 16px);
+                            height: 3px;
+                            margin: 5px auto;
+                            background-color: #3b49df;
+                            display: block;
+                            position: absolute;
+                            bottom: -8px;
+                            left: 8px;
+                        }
+                    }
+                    &:hover{
+                        color: #323ebe;
+                        background-color: rgba(8,9,10,0.05);
+                        &::after{
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+            }
         }
+        
     }
     article.post{
         border: 1px solid rgba(8,9,10,0.1);
         border-radius: 5px;
         margin-bottom: 0.75rem;
+        cursor: pointer;
         .img-container{
             width: 100%;
             a{
@@ -47,27 +78,40 @@ main.posts{
                 display: block;      
                 img.avatar{
                     border-radius: 50%;    
-                    width: 50%;
+                    width: 100%;
                 }
             }
             a.avatar-link{
-                width: 15%;
+                width: 35px;
+                margin-right: 10px;
             }
             div{
                 a.author-link{
                     font-size: 14px;
                     color: #4d5760;
                     font-weight: 500;
+                    &:hover{
+                        color: #08090a;
+                    }
                 }
                 a.date-link{
                     font-size: 12px;
                     font-weight: 500;
                     color: #4d5760;
+                    &:hover{
+                        color: #08090a;
+                    }
                 }
             }
         }
         a.post-link{
             font-size: 20px;
+            h1,h2{
+                &:hover{
+                    color: #323ebe;
+                }
+            }
+            
         }
         nav{
             ul.nav{
@@ -75,6 +119,9 @@ main.posts{
                     a.nav-link{
                         font-size: 14px;
                         color: #4d5760;
+                        &:hover{
+                            color: #08090a;
+                        }
                     }
                 }
             }
@@ -86,6 +133,13 @@ main.posts{
                 a.review-link{
                     font-size: 14px;
                     margin: 10px;
+                    &:hover{
+                        color: #08090a;
+                    }
+                    span{
+                        line-height: 24px;
+                        
+                    }
                 }
                 a.time-link{
                     font-size: 12px;
@@ -96,6 +150,9 @@ main.posts{
                     border-radius: 5px;
                     border: none;
                     padding: 4px 12px;
+                    &:hover{
+                        background-color: #b5bdc4;
+                    }
                 }
             }
             
@@ -103,9 +160,21 @@ main.posts{
     }
 }
 
-@media only screen and (min-width: 768px){
-    // .main-posts{
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    // }    
+@media only screen and (min-width:768px){
+    main.posts{
+        article.post{
+            a.post-link{
+                h1{
+                    font-size: 30px;
+                }
+                h2{
+                    font-size: 24px;
+                }
+                
+            }
+            
+        } 
+    }
+    
+    
 }

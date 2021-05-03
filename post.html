@@ -50,12 +50,12 @@
 
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col col-md-1">
 
       </div>
 
       <!-- TOÑO -->
-      <main class="selected-post col-12 col-md-8 px-0 mb-5">
+      <main class="selected-post col-12 col-md-11 col-lg-8 px-0 mb-5">
         <div class="container-fluid">
           <div class="row">
             <img class="header-img"
@@ -65,7 +65,7 @@
           <div class="row">
             <div class="container">
               <div class="row">
-                <section class="post-header col-12 py-3">
+                <section class="post-header col-12 py-4 px-md-5">
                   <h1>Hello world :)</h1>
                   <nav>
                     <ul class="nav ">
@@ -95,7 +95,7 @@
                     </div>
                   </div>
                 </section>
-                <section class="post-content col-12">
+                <section class="post-content col-12 px-md-5">
                   <h2>Hello World</h2>
                   <p>I'd love to introduce myself into the dev community 🖤. I've been around reading
                     posts for a few
@@ -129,19 +129,19 @@
                     I'm taking a good
                     decision joining this loved community.</p>
                 </section>
-                <section class="discussion px-3">
+                <section class="discussion px-3 py-5 px-md-5">
                   <div class=" header-discussion d-flex justify-content-between align-items-center">
                     <h2>Discussion (3)</h2>
                     <button>Suscribe</button>
                   </div>
-                  <div class="discussion-post d-flex justify-content-between">
+                  <div class="discussion-post d-flex justify-content-start">
                     <img class="avatar"
                       src="https://res.cloudinary.com/practicaldev/image/fetch/s--Gf82FTb1--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/621487/8aca63f6-32ff-4433-9fae-441bc2e91c0e.jpeg"
                       alt="">
                     <textarea class="comments" name="" id="" cols="30" rows="2"
                       placeholder="Add to the discussion"></textarea>
                   </div>
-                  <div class="discussion-post d-flex justify-content-between align-items-start">
+                  <div class="discussion-post d-flex justify-content-start align-items-start">
                     <div class="discussion-author d-flex flex-column justify-content-between align-items-center">
                       <a class="avatar-link" href="">
                         <img
@@ -152,7 +152,12 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
                           aria-labelledby="a7ogx57eiahdpnqm598gzaj4dt93991q" class="crayons-icon expanded">
                           <title id="a7ogx57eiahdpnqm598gzaj4dt93991q">Collapse</title>
-                          <path
+                          <style>
+                            .path {
+                              fill: #64707d;
+                            }
+                          </style>
+                          <path class="path"
                             d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
                           </path>
                         </svg>
@@ -163,13 +168,16 @@
                     <div class="discussion-content">
                       <div class="content-author">
                         <div class="d-flex justify-content-between align-items-start ">
-                          <a class="author-link mr-3" href="">Guillermo Veron</a>
+
                           <div class="d-flex flex-wrap mr-3 align-items-start">
-                            <span class="date-link">Apr 30</span>
-                            <span class="time-link">Edited </span>
-                            <span class="d-none ">on Apr 30</span>
+                            <a class="author-link" href="">Guillermo Veron</a>
+                            <span class="separator">•</span>
+                            <a class="date-link" href="">Apr 30</a>
+                            <a class="time-link" href=""> <strong>•</strong> Edited <span
+                                class="d-none d-md-inline-block">on Apr 30</span></a>
+
                           </div>
-                          <a class="d-flex flex-wrap mx-2 align-items-start" href="">...</a>
+                          <a class="discussion-options" href="">...</a>
                         </div>
                         <p>Welcome Cale! You have just made a very good decision. Knowledge
                           sharing, as you said, is the
@@ -187,7 +195,7 @@
                     </div>
 
                   </div>
-                  <div class="discussion-post d-flex justify-content-between align-items-start">
+                  <div class="discussion-post d-flex justify-content-start align-items-start">
                     <div class="discussion-author d-flex flex-column justify-content-between align-items-center">
                       <a class="avatar-link" href="">
                         <img
@@ -198,7 +206,12 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
                           aria-labelledby="a7ogx57eiahdpnqm598gzaj4dt93991q" class="crayons-icon expanded">
                           <title id="a7ogx57eiahdpnqm598gzaj4dt93991q">Collapse</title>
-                          <path
+                          <style>
+                            .path {
+                              fill: #64707d;
+                            }
+                          </style>
+                          <path class="path"
                             d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
                           </path>
                         </svg>
@@ -209,12 +222,14 @@
                     <div class="discussion-content">
                       <div class="content-author">
                         <div class="d-flex justify-content-between align-items-start ">
-                          <a class="author-link mr-3" href="">Thomas Btn</a>
+
                           <div class="d-flex flex-wrap mr-3 align-items-start">
-                            <span class="date-link">Apr 30</span>
+                            <a class="author-link" href="">Thomas Btn</a>
+                            <span class="separator">•</span>
+                            <span class="date-link"><a href="">Apr 30</a></span>
 
                           </div>
-                          <a class="d-flex flex-wrap mx-2 align-items-start" href="">...</a>
+                          <a class="discussion-options" href="">...</a>
                         </div>
                         <p>Welcome here ! 👋🏼</p>
                       </div>
@@ -229,7 +244,7 @@
                     </div>
 
                   </div>
-                  <div class="discussion-post d-flex justify-content-between align-items-start">
+                  <div class="discussion-post d-flex justify-content-start align-items-start">
                     <div class="discussion-author d-flex flex-column justify-content-between align-items-center">
                       <a class="avatar-link" href="">
                         <img
@@ -239,8 +254,13 @@
                       <span class="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
                           aria-labelledby="a7ogx57eiahdpnqm598gzaj4dt93991q" class="crayons-icon expanded">
+                          <style>
+                            .path {
+                              fill: #64707d;
+                            }
+                          </style>
                           <title id="a7ogx57eiahdpnqm598gzaj4dt93991q">Collapse</title>
-                          <path
+                          <path class="path"
                             d="M12 10.677L8 6.935 9 6l3 2.807L15 6l1 .935-4 3.742zm0 4.517L9 18l-1-.935 4-3.742 4 3.742-1 .934-3-2.805z">
                           </path>
                         </svg>
@@ -251,12 +271,14 @@
                     <div class="discussion-content">
                       <div class="content-author">
                         <div class="d-flex justify-content-between align-items-start ">
-                          <a class="author-link mr-3" href="">InHu Official</a>
+
                           <div class="d-flex flex-wrap mr-3 align-items-start">
-                            <span class="date-link">Apr 30</span>
+                            <a class="author-link" href="">InHu Official</a>
+                            <span class="separator">•</span>
+                            <span class="date-link"><a href="">Apr 30</a></span>
 
                           </div>
-                          <a class="d-flex flex-wrap mx-2 align-items-start" href="">...</a>
+                          <a class="discussion-options" href="">...</a>
                         </div>
                         <p>I hope I speak on behalf of the whole community when I say that we
                           look forward to seeing
