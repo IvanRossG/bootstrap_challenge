@@ -444,6 +444,10 @@ main.posts article.post div.reviews div button:hover {
   color: #323ec2;
 }
 
+.col-sticky-position {
+  background-color: #eef0f1;
+}
+
 main.selected-post .container-fluid {
   border: 1px solid rgba(8, 9, 10, 0.1);
   border-radius: 5px;
