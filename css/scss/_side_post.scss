@@ -1,19 +1,17 @@
-// .col-sm-11{
-//     border: 5px black solid;
-// }
-.post-card{
-    height: 350px;
+.profile-card{
+    height: fit-content;
 }
 .backcolor{
     background: black;
-    height: 35px;
-}
-.avatar-mainavatar{
-    position: absolute;
-    right: 175px;
-    bottom: 265px
+    height: 30px;
 }
 .profile-name:hover{
     color: #323ec2;
-
+    font-size: 20px;
+}
+.subcard-content-profile{
+    font-size: 14px;
+}
+.profile-link{
+    color: #323ec2;
 }
