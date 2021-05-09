@@ -323,137 +323,39 @@ main.posts article.post div.reviews div button:hover {
   background-color: #e6e8e8;
 }
 
-.card h5 {
-  margin-top: 14px;
-  margin-left: 10px;
+.card-header {
+  border-radius: 1px;
 }
 
-.card {
-  margin-top: 15px;
-  border-radius: 10px;
+.card-header .sec-link {
+  font-size: 15px;
 }
 
-.card .card-one {
-  height: 480px;
+.card-header .sec-link a {
+  color: #323ec2;
 }
 
-.card .card-two {
-  height: 470PX;
+.subcard-content-sec {
+  font-size: 14px;
 }
 
-.card .card-three {
-  height: 475px;
+.list-group-item:hover {
+  color: #323ec2;
 }
 
-.card a.main-link {
-  position: absolute;
-  top: 16px;
-  left: 178px;
+.tag-sec {
+  font-size: 12px;
 }
 
-.sec-one {
-  margin-top: 15px;
-  margin-left: 16px;
+.listing-footer {
+  font-size: 14px;
 }
 
-.end {
-  margin-top: 25px;
-}
-
-.tag-icon {
-  position: absolute;
-  background-color: #3b49df;
+.mini-button-btn {
   border-radius: 5px;
-  color: white;
-  width: 39px;
-  height: 20px;
-  text-align: center;
-  top: 78px;
-  font-size: 13px;
-}
-
-.sec-one p.linux {
-  margin-top: 37px;
-  margin-right: 5px;
-}
-
-.sec-one p.core {
-  margin-top: 15px;
-  margin-right: 20px;
-}
-
-.sec-one a.tag-icon-two {
-  position: absolute;
-  background-color: #3b49df;
-  border-radius: 5px;
-  color: white;
-  width: 39px;
-  height: 20px;
-  font-size: 13px;
-  text-align: center;
-  top: 330px;
-}
-
-.sec-one p.php {
-  margin-top: 45px;
-}
-
-.sec-one a.tag-icon-three {
-  position: absolute;
-  background-color: #3b49df;
-  border-radius: 5px;
-  color: white;
-  width: 39px;
-  height: 20px;
-  font-size: 13px;
-  text-align: center;
-  top: 425px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .card div.card-one {
-    height: 530px;
-  }
-  .card div.card-one .sec-one p {
-    margin-right: 15px;
-  }
-  .card a.main-link {
-    position: absolute;
-    top: 16px;
-    left: 145px;
-  }
-  .card div.card-two {
-    height: 580PX;
-  }
-  .card div.card-two .sec-one p.core {
-    margin-top: 15px;
-    margin-right: 20px;
-  }
-  .card div.card-two .sec-one p.php {
-    margin-top: 45px;
-  }
-  .card div.card-two .tag-icon-two {
-    position: absolute;
-    background-color: #3b49df;
-    border-radius: 5px;
-    color: white;
-    width: 39px;
-    height: 20px;
-    font-size: 13px;
-    text-align: center;
-    top: 425px;
-  }
-  .card div.card-two .tag-icon-three {
-    position: absolute;
-    background-color: #3b49df;
-    border-radius: 5px;
-    color: white;
-    width: 39px;
-    height: 20px;
-    font-size: 13px;
-    text-align: center;
-    top: 545px;
-  }
+  font-size: 11px;
+  width: 35px;
+  background-color: #323ec2;
 }
 
 #footer {
@@ -519,62 +421,22 @@ main.posts article.post div.reviews div button:hover {
 }
 
 .post-card {
-  height: 370px;
-  margin-top: 1px;
+  height: 350px;
 }
 
 .backcolor {
-  height: 30px;
-  background: #9c7979;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background: black;
+  height: 35px;
 }
 
-.mainavatar {
+.avatar-mainavatar {
   position: absolute;
+  right: 175px;
+  bottom: 265px;
 }
 
-.mainavatar img {
-  width: 80px;
-  height: 80px;
-}
-
-.name {
-  position: absolute;
-  top: 20px;
-  right: 60px;
-}
-
-.boton {
-  background: #323ec2;
-  color: white;
-  width: 215px;
-  border-radius: 10px;
-}
-
-.locacion {
-  font-size: 12px;
-}
-
-.s-body {
-  height: 430px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .name {
-    position: absolute;
-    top: 20px;
-    right: 15px;
-  }
-  .boton {
-    background: #323ec2;
-    color: white;
-    width: 170px;
-    border-radius: 10px;
-  }
-  .s-body {
-    height: 495px;
-  }
+.profile-name:hover {
+  color: #323ec2;
 }
 
 main.selected-post .container-fluid {
