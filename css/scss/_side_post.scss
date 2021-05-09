@@ -1,61 +1,19 @@
+// .col-sm-11{
+//     border: 5px black solid;
+// }
 .post-card{
-    height: 370px;
-    margin-top: 1px;
+    height: 350px;
 }
-
 .backcolor{
-    height: 30px;
-    background: #9c7979;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background: black;
+    height: 35px;
 }
-.mainavatar{
+.avatar-mainavatar{
     position: absolute;
-    img{
-        width: 80px;
-        height: 80px;
-    }
+    right: 175px;
+    bottom: 265px
 }
-.name{
-    position: absolute;
-    top: 20px;
-    right: 60px
+.profile-name:hover{
+    color: #323ec2;
+
 }
-.boton{
-    background: #323ec2;
-    color: white;
-    width: 215px;
-    border-radius: 10px;
-} 
-.locacion{
-    font-size: 12px;
-}
-.s-body{
-    height: 430px;
-}
-
-@media only screen and (max-width: 1024px){
-    .name{
-        position: absolute;
-        top: 20px;
-        right: 15px
-    }  
-    
-    .boton{
-        background: #323ec2;
-        color: white;
-        width: 170px;
-        border-radius: 10px;
-    } 
-
-    .s-body{
-        height: 495px;
-    }
-}
-
-
-
-
-
-
-
