@@ -1,0 +1,1 @@
+//Colocar todas las declaraciones de funciones en este archivo
