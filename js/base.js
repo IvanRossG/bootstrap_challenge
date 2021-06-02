@@ -24,10 +24,31 @@ $(document).ready(() => {
 
   //Codigo que corresponda a CREAR POST
   if (window.location.pathname === '/createpost.html') {
-    console.log('Estoy en Crear Post')
-
-
-    // Su codigo aqui
+    
+    var quill = new Quill('#editor', {
+      theme: 'snow'
+    });
+    $('.create-post').click(() => {
+      //Obtenemos la fecha en formato MM/DD/AAA
+      let fullDate = new Date()
+      let twoDigitMonth = ((fullDate.getMonth().length+1) === 1)? (fullDate.getMonth()+1) : '0' + (fullDate.getMonth()+1);
+      let currentDate = fullDate.getDate() + "/" + twoDigitMonth + "/" + fullDate.getFullYear();
+      if ($('#title').val() === '' || $('#image').val()=== '' || $('#editor').html() === '') {
+        return
+      }
+      let postObject = {
+        userId: '',
+        titulo: $('#title').val(),
+        tags: $('#tags').val(),
+        imagen: $('#image').val(),
+        minutosLectura: 6,
+        fechaCreacion: currentDate,
+        contenido: $('#editor').html()
+        
+      }
+      console.log(postObject)
+      uploadPost(postObject)
+    })
 
 
   }
