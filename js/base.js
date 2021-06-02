@@ -32,4 +32,14 @@ $(document).ready(() => {
 
   }
 
+  //Codigo que corresponda a CREAR POST
+  if (window.location.pathname === '/bootstrap_challenge/editpost.html') {
+    console.log('Estoy en Edit Post')
+
+
+    // Su codigo aqui
+
+
+  }
+
 })

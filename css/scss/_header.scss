@@ -57,6 +57,30 @@
                     border-radius: 5px;
                 }
             }
+
+            .btn-edit-post {
+                background-color: #28a745;
+                color: #ffffff;
+                padding: 8px 16px;
+                border-radius: 5px;
+    
+                &:hover {
+                    background-color: #32ce56;
+                    border-radius: 5px;
+                }
+            }
+
+            .btn-delete-post {
+                background-color: #dc3545;
+                color: #ffffff;
+                padding: 8px 16px;
+                border-radius: 5px;
+    
+                &:hover {
+                    background-color: rgb(232, 64, 81);
+                    border-radius: 5px;
+                }
+            }
     
             .avatar {
                 img {
