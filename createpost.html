@@ -20,173 +20,59 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
   <script src="https://kit.fontawesome.com/60a8f45d49.js" crossorigin="anonymous"></script>
-
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
 
-  <title>Hello world :) - DEV Community 👩‍💻👨‍💻</title>
+  <title>New Post - DEV Community 👩‍💻👨‍💻</title>
 </head>
 
 <body>
   <!-- OSMAR -->
   <header id="header" class="header">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo pr-2"><img src="./assets/icons/devto.svg" alt="DEV.to" class="img-fluid"></a>
+      <div class="d-flex align-items-center justify-content-between mt-2">
+        <a href="index.html" class="logo pr-2 mr-2 ">
+          <img src="./assets/icons/devto.svg" alt="DEV.to" class="img-fluid">
+        </a>
+        <p class="mb-0">Create Post</p>
 
-      <form class="form-inline mr-auto d-none d-lg-block">
-        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
-        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-      </form>
-
-      <nav class="nav-menu d-lg-block">
-        <ul>
-          <li><a href="#" class="btn-post d-none d-lg-block">Write a post</a></li>
-          <li><a href="#"><img src="./assets/icons/message.svg" alt="Messages"></a></li>
-          <li><a href="#"><img src="./assets/icons/notification.svg" alt="Notification"></a></li>
-          <li><a href="#" class="avatar"><img src="./assets/icons/avatar.webp" alt="Avatar"></a></li>
-        </ul>
-      </nav>
+      </div>
+      <ul class="nav d-none d-md-flex">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Edit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Preview</a>
+        </li>
+      </ul>
+      <button class="icon">X</button>
     </div>
   </header>
 
   <div class="container">
     <div class="row">
-      <div class="col-sticky-position fixed-bottom col-sm-12">
-        <ul class="post-icons d-flex justify-content-between align-items-center mb-1">
-          <li>
-            <a href="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="corazon  m-2"
-                viewBox="0 0 24 24">
-                <path
-                  d="M21.179 12.794l.013.014L12 22l-9.192-9.192.013-.014A6.5 6.5 0 0112 3.64a6.5 6.5 0 019.179 9.154zM4.575 5.383a4.5 4.5 0 000 6.364L12 19.172l7.425-7.425a4.5 4.5 0 10-6.364-6.364L8.818 9.626 7.404 8.21l3.162-3.162a4.5 4.5 0 00-5.99.334l-.001.001z">
-                </path>
-              </svg>
-            </a>
-          </li>
-          <span class="react-number">15</span>
-          <li>
-            <a href="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="unicornio m-2"
-                viewBox="0 0 24 24">
-                <path
-                  d="M5.645 8.013c.013-.265-.261-.323-.4-.183-1.16 1.17-1.822 3.865-.344 7.32.294.961 1.938 3.19.84 6.131l-.003.006c-.094.255.206.404.366.263 1.395-1.226 1.933-3.593 1.1-6.375-.488-1.657-1.955-4.226-1.559-7.162zm-3.22 2.738c.05-.137-.124-.417-.326-.225-.939.893-1.316 2.863-.976 4.605.547 2.878 2.374 3.526 2.066 6.629-.028.102.176.38.348.154 1.546-2.033.409-4.453-.241-6.006-1.005-2.386-1.087-4.118-.871-5.157zM22.2 3.543l-8.579 3.68c-.332-.343-.615-.63-.76-.773-.527-.517.313-4.224-.409-4.439-.933-.277-5.042 4.624-4.696 7.953.224 2.735 2.193 4.89 1.72 8.412 3.446-.644 4.841 1.697 5.83 2.45 1.752 1.335 5.155-.551 3.807-3.582-.193-.435-2.05-4.732-2.931-6.775l6.619-5.94c.486-.44-.003-1.242-.601-.986zm-9.418 9.535a.828.828 0 01-.74-.9.825.825 0 01.81-.76c.479 0 .85.42.81.903a.824.824 0 01-.88.757z">
-                </path>
-              </svg>
-            </a>
-          </li>
-          <span class="react-number">5</span>
-          <li>
-            <a href="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="ribon  m-2"
-                viewBox="0 0 24 24">
-                <path
-                  d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1z">
-                </path>
-              </svg>
-            </a>
-          </li>
-          <span class="react-number">13</span>
-          <li>
-            <a href="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="puntos  m-2"
-                viewBox="0 0 24 24">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+
 
       <!-- TOÑO -->
-      <main class="selected-post col-12 col-md-11 col-lg-8 px-0 mb-5">
+      <main class="new-post col-12 col-md-11 col-lg-8 px-0 mb-5">
+        <form action="" method="">
+          <label for="title" class="form-label mt-4">Título</label>
+          <input type="text" class="form-control" id="title">
+          <label for="tags" class="form-label mt-4">Tags</label>
+          <input type="text" class="form-control" id="tags">
+          <label for="image" class="form-label mt-4">Imagen</label>
+          <input type="text" class="form-control" id="image">
+        </form>
+        <div class="editor-container">
+          <div class="editor-post" id="editor">
+
+          </div>
+          <button class="btn btn-primary create-post">Publish</button>
+          <button class="btn btn-secondary">Save draft</button>
+        </div>
 
       </main>
 
-      <!-- Seccion derecha Iván -->
-      <section class="col-sm-12 col-md-11 offset-md-1 offset-lg-0 col-lg-3">
-        <section class="side-profile">
-          <div class="card profile-card">
-            <div class="card-header card-up backcolor d-flex">
-              <div href="#" class="avatar-mainavatar">
-                <img
-                  src="
-                https://res.cloudinary.com/practicaldev/image/fetch/s--UwzTUU24--/c_fill,f_auto,fl_progressive,h_50,q_auto,w_50/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/509677/30f66b0c-d311-433c-92ec-797936a62494.jpg"
-                  class="rounded-circle img-responsive image" alt="men avatar">
-              </div>
-              <div class="profile-name ml-2 mt-4 font-weight-bold">Caleb
-                Cabrera
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="d-flex flex-column bd-highlight mt-4">
-                <div class="p-1 bd-highlight">
-                  <p class="card-text texto">- Self-taught web
-                    developer - Live in 🇺🇦 -
-                    Trying to be
-                    more productive than I am -
-                  </p>
-                </div>
-              </div>
-              <div class="mini-button-profile-btn btn-primary btn-sm text-center d-flex justify-content-center">
-                Follow
-              </div>
-              <div class="list-group-profile list-group-flush mt-3">
-                <div class="list-group-item-profile text-left mt-2">
-                  <div class="subcard-content-profile font-weight-bold text-secondary">Work:</div>
-                  <div class="subcard-content">Content Writer</div>
-                </div>
-                <div class="list-group-item-profile text-left mt-2">
-                  <div class="subcard-content-profile font-weight-bold text-secondary">Location:</div>
-                  <div class="subcard-content">Toronto, Ontario</div>
-                </div>
-                <div class="list-group-item-profile text-left mt-2">
-                  <div class="subcard-content-profile font-weight-bold text-secondary">Join Date:</div>
-                  <div class="subcard-content">Aug 14, 2020</div>
-                </div>
-              </div>
-            </div>
-        </section>
-        <section class="card profile-card-two mt-3">
-          <div class="card-header">
-            <h7 class="font-weight-bold">More from <a href="#" class="profile-link">Caleb Cabrera</a></h7>
-          </div>
-          <div class="list-group list-group-flush">
-            <!-- 1 -->
-            <a href="#" class="list-group-item btn btn-light text-left">
-              <div class="subcard-content-sec">5 Key Takeaways from my First Freelance Project</div>
-              <div class="tag-sec text-muted">
-                <ul class="d-flex justify-content-start">
-                  <li class="mr-2">#freelance</li>
-                  <li class="mr-2">#carrer</li>
-                  <li class="mr-2">#webdev</li>
-                </ul>
-              </div>
-            </a>
-            <!-- 2 -->
-            <a href="#" class="list-group-item btn btn-light text-left">
-              <div class="subcard-content-sec">You Need to Try These 10 NPM Packages as a React Developer</div>
-              <div class="tag-sec text-muted">
-                <ul class="d-flex justify-content-start">
-                  <li class="mr-2">#react</li>
-                  <li class="mr-2">#javascript</li>
-                  <li class="mr-2">#beginners</li>
-                </ul>
-              </div>
-            </a>
-            <!-- 3 -->
-            <a href="#" class="list-group-item btn btn-light text-left">
-              <div class="subcard-content-sec">Build a Dogecoin Price Ticker using React</div>
-              <div class="tag-sec text-muted">
-                <ul class="d-flex justify-content-start">
-                  <li class="mr-2">#react</li>
-                  <li class="mr-2">#webdev</li>
-                  <li class="mr-2">#beginners</li>
-                </ul>
-              </div>
-            </a>
-          </div>
-        </section>
-      </section>
     </div>
   </div>
 
@@ -249,6 +135,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
   <script src="./js/functions.js"></script>
   <script src="./js/base.js"></script>
 </body>

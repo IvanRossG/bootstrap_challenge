@@ -654,4 +654,8 @@ main.selected-post .container-fluid .row .container .row section.read-next div d
     font-size: 30px;
   }
 }
+
+main.new-post .editor-container .editor-post {
+  height: 50vh;
+}
 /*# sourceMappingURL=style.css.map */
