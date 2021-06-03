@@ -88,7 +88,7 @@ $(document).ready(() => {
 
   //Codigo que corresponda a EDIT POST
   if (window.location.pathname === "/editpost.html") {
-    // console.log("Estoy en Edit Post");
+    console.log("Estoy en Edit Post");
     const quill = new Quill("#editor", {
       theme: "snow",
     });
@@ -135,7 +135,7 @@ $(document).ready(() => {
           data: JSON.stringify(postObject),
           success : ( response ) => {
             console.log( 'Updated' );
-            window.location.pathname === "/"
+            window.location.href = "/";
           }
         });
         console.log(req);
@@ -154,7 +154,7 @@ $(document).ready(() => {
           dataType: "json",
           success: (response) => {
             console.log( 'Deleted' );
-            window.location.pathname === "/"
+            window.location.href = "/";
           },
         });
       } catch (error) {
