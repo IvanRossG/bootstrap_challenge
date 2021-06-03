@@ -103,6 +103,30 @@ body > div.container {
   border-radius: 5px;
 }
 
+#header .container .nav-menu .btn-edit-post {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#header .container .nav-menu .btn-edit-post:hover {
+  background-color: #32ce56;
+  border-radius: 5px;
+}
+
+#header .container .nav-menu .btn-delete-post {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+#header .container .nav-menu .btn-delete-post:hover {
+  background-color: #e84051;
+  border-radius: 5px;
+}
+
 #header .container .nav-menu .avatar img {
   width: 35px;
   border-radius: 50%;
@@ -498,6 +522,10 @@ main.selected-post .container-fluid .row .container .row section.post-header .au
 
 main.selected-post .container-fluid .row .container .row section.post-header .author .author-data {
   font-size: 14px;
+}
+
+main.selected-post .container-fluid .row .container .row section.post-content img {
+  max-width: 100%;
 }
 
 main.selected-post .container-fluid .row .container .row section.post-content h2 {
