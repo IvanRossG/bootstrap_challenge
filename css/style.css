@@ -524,6 +524,10 @@ main.selected-post .container-fluid .row .container .row section.post-header .au
   font-size: 14px;
 }
 
+main.selected-post .container-fluid .row .container .row section.post-content img {
+  max-width: 100%;
+}
+
 main.selected-post .container-fluid .row .container .row section.post-content h2 {
   font-size: 32px;
 }
@@ -677,6 +681,73 @@ main.selected-post .container-fluid .row .container .row section.read-next div d
   main.selected-post .container-fluid .row .container .row section.post-content h3 {
     font-size: 30px;
   }
+}
+
+main.new-post {
+  font-family: 'Roboto', sans-serif;
+}
+
+main.new-post form {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  color: #1b1e20;
+  padding: 25px 50px;
+}
+
+main.new-post form input {
+  border: none;
+}
+
+main.new-post form input#title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+main.new-post form input#title:placeholder {
+  color: #202325;
+}
+
+main.new-post form input#image {
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  width: 30%;
+  text-align: center;
+}
+
+main.new-post form input#image::-webkit-input-placeholder {
+  color: #363d44;
+}
+
+main.new-post form input#image:-ms-input-placeholder {
+  color: #363d44;
+}
+
+main.new-post form input#image::-ms-input-placeholder {
+  color: #363d44;
+}
+
+main.new-post form input#image::placeholder {
+  color: #363d44;
+}
+
+main.new-post form input#tags {
+  border: none;
+}
+
+main.new-post form input#tags::-webkit-input-placeholder {
+  color: #08090a;
+}
+
+main.new-post form input#tags:-ms-input-placeholder {
+  color: #08090a;
+}
+
+main.new-post form input#tags::-ms-input-placeholder {
+  color: #08090a;
+}
+
+main.new-post form input#tags::placeholder {
+  color: #08090a;
 }
 
 main.new-post .editor-container .editor-post {
