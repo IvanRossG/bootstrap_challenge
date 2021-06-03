@@ -36,6 +36,7 @@ $(document).ready(() => {
   if (window.location.pathname === "/post.html") {
     let searchParameter = window.location.search;
     const idPost = searchParameter.slice(searchParameter.indexOf("=") + 1);
+    $( '.btn-edit-post' ).attr( "href", `./editpost.html?idPost=${ idPost }` )
     getPost(idPost);
   }
 
@@ -83,105 +84,110 @@ $(document).ready(() => {
       };
       uploadPost(postObject);
     });
+  }
 
-    //Codigo que corresponda a EDIT POST
-    if (window.location.pathname === "/editpost.html") {
-      // console.log("Estoy en Edit Post");
-      const quill = new Quill("#editor", {
-        theme: "snow",
-      });
+  //Codigo que corresponda a EDIT POST
+  if (window.location.pathname === "/editpost.html") {
+    // console.log("Estoy en Edit Post");
+    const quill = new Quill("#editor", {
+      theme: "snow",
+    });
 
-      const params = new URLSearchParams(window.location.search);
-      const postId = params.get("postId");
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get("idPost");
 
-      $(".btn-delete-post").attr("data-id", postId);
+    $(".btn-delete-post").attr("data-id", postId);
 
-      const printPost = async () => {
-        try {
-          const post = await $.get(
-            `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`
-          );
-          if (post !== null) {
-            const {
-              titulo,
-              userId,
-              tags,
-              minutosLectura,
-              imagen,
-              fechaCreacion,
-              contenido,
-            } = post;
-            const delta = quill.clipboard.convert(contenido);
+    const printPost = async () => {
+      try {
+        const post = await $.get(
+          `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`
+        );
+        if (post !== null) {
+          const {
+            titulo,
+            userId,
+            tags,
+            minutosLectura,
+            imagen,
+            fechaCreacion,
+            contenido,
+          } = post;
+          const delta = quill.clipboard.convert(contenido);
 
-            $("#title").val(titulo);
-            $("#tags").val(tags);
-            $("#image").val(imagen);
-            quill.setContents(delta, "silent");
+          $("#title").val(titulo);
+          $("#tags").val(tags);
+          $("#image").val(imagen);
+          quill.setContents(delta, "silent");
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    printPost();
+
+    const editPost = async (postObject) => {
+      try {
+        let req = await $.ajax({
+          url: `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`,
+          method: "PUT",
+          data: JSON.stringify(postObject),
+          success : ( response ) => {
+            console.log( 'Updated' );
+            window.location.pathname === "/"
           }
-        } catch (error) {
-          console.log(error);
-        }
+        });
+        console.log(req);
+        req.name ? (window.location.pathname = "/") : "";
+        
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    const deletePost = async (postId) => {
+      try {
+        $.ajax({
+          url: `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`,
+          method: "DELETE",
+          dataType: "json",
+          success: (response) => {
+            console.log( 'Deleted' );
+            window.location.pathname === "/"
+          },
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    $(".edit-post").click(() => {
+      //Obtenemos la fecha en formato MM/DD/AAA
+      if (
+        $("#title").val() === "" ||
+        $("#image").val() === "" ||
+        $("#editor").html() === ""
+      ) {
+        return;
+      }
+      let postObject = {
+        userId: "",
+        titulo: $("#title").val(),
+        tags: $("#tags").val(),
+        imagen: $("#image").val(),
+        minutosLectura: 6,
+        contenido: $("#editor").html(),
       };
+      editPost(postObject);
+    });
 
-      printPost();
+    $(".btn-delete-post").click(() => {
+      const postId = $(".btn-delete-post").attr("data-id");
+      console.log(postId);
+      deletePost(postId);
+    });
 
-      const editPost = async (postObject) => {
-        try {
-          let req = await $.ajax({
-            url: `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`,
-            method: "PUT",
-            data: JSON.stringify(postObject),
-          });
-
-          console.log(req);
-          req.name ? (window.location.pathname = "/") : "";
-        } catch (error) {
-          console.log(error);
-        }
-      };
-
-      const deletePost = async (postId) => {
-        try {
-          $.ajax({
-            url: `https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`,
-            method: "DELETE",
-            dataType: "json",
-            success: (response) => {
-              console.log("Post deleted");
-            },
-          });
-        } catch (error) {
-          console.log(error);
-        }
-      };
-
-      $(".edit-post").click(() => {
-        //Obtenemos la fecha en formato MM/DD/AAA
-        if (
-          $("#title").val() === "" ||
-          $("#image").val() === "" ||
-          $("#editor").html() === ""
-        ) {
-          return;
-        }
-        let postObject = {
-          userId: "",
-          titulo: $("#title").val(),
-          tags: $("#tags").val(),
-          imagen: $("#image").val(),
-          minutosLectura: 6,
-          contenido: $("#editor").html(),
-        };
-        editPost(postObject);
-      });
-
-      $(".btn-delete-post").click(() => {
-        const postId = $(".btn-delete-post").attr("data-id");
-        console.log(postId);
-        deletePost(postId);
-      });
-
-      // Su codigo aqui
-    }
+    // Su codigo aqui
   }
 });
