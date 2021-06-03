@@ -20,7 +20,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/60a8f45d49.js" crossorigin="anonymous"></script>
-
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Hello world :) - DEV Community 👩‍💻👨‍💻</title>
@@ -49,6 +49,75 @@
         </div>
     </header>
 
+    <!-- TOÑO -->
+    <main class="new-post col-12 col-md-11 col-lg-8 px-0 mb-5 mt-5">
+        <form action="" method="" class="mb-5">
+            <label for="title" class="form-label mt-4">Título</label>
+            <input type="text" class="form-control" id="title">
+            <label for="tags" class="form-label mt-4">Tags</label>
+            <input type="text" class="form-control" id="tags">
+            <label for="image" class="form-label mt-4">Imagen</label>
+            <input type="text" class="form-control" id="image">
+        </form>
+        <div class="editor-container">
+            <div id="editor" class="editor-post mb-3">
+
+            </div>
+            <button class="btn btn-primary edit-post">Update</button>
+            <button class="btn btn-secondary">Save draft</button>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer mt-3">
+        <div class="container">
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reading List</a></li>
+                    <li><a href="#">Listing</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Tags</a></li>
+                    <li><a href="#">Code of Conduct</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">DEV Shop</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of use</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><strong>Write a post</strong></a></li>
+                </ul>
+
+                <div class="p-3 social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                </div>
+                <hr>
+            </nav>
+
+            <div class="credits pt-3">
+                <p>
+                    <a href="#"><strong>DEV Community</strong></a> – A constructive and inclusive social network for
+                    software developers.
+                    With you every step of your
+                    journey.
+                </p>
+
+                <p>
+                    Built on <a href="#"><strong>Forem</strong></a> — the <a href="#"><strong>open source</strong></a>
+                    software that powers <a href="#"><strong>DEV</strong></a> and other inclusive communities.
+                    <br>
+                    Made with love and <a href="#"><strong>Ruby on Rails</strong></a>. DEV Community © 2016 - 2021.
+                </p>
+                <img src="./assets/icons/seed.svg" alt="">
+            </div>
+        </div>
+    </footer>
 
     <!-- SCRIPTS BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -59,6 +128,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
     <script src="./js/functions.js"></script>
     <script src="./js/base.js"></script>
 </body>
