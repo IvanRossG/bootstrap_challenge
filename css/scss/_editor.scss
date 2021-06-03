@@ -1,4 +1,38 @@
 main.new-post{
+  font-family: 'Roboto', sans-serif;
+  
+  form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  border: 1px solid #dadada;
+    color: #1b1e20;
+    padding: 25px 50px;
+    input{
+      border: none;
+      &#title{
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      &#title:placeholder{
+        color: #202325;
+      }
+      &#image{
+        border: 2px solid rgba(128, 128, 128,0.5);
+        width: 30%;
+        text-align: center;
+      }
+      &#image::placeholder{
+        color: #363d44;
+      }
+      &#tags{
+        border: none;
+      }
+      &#tags::placeholder{
+        color: #08090a;
+      }
+    }
+    
+  }
   .editor-container{
     .editor-post{
       height: 50vh;
