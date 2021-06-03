@@ -88,7 +88,7 @@ $(document).ready(() => {
 
   //Codigo que corresponda a EDIT POST
   if (window.location.pathname === "/editpost.html") {
-    console.log("Estoy en Edit Post");
+    
     const quill = new Quill("#editor", {
       theme: "snow",
     });
@@ -106,11 +106,10 @@ $(document).ready(() => {
         if (post !== null) {
           const {
             titulo,
-            userId,
+            userName,
+            userAvatar,
             tags,
-            minutosLectura,
             imagen,
-            fechaCreacion,
             contenido,
           } = post;
           const delta = quill.clipboard.convert(contenido);
@@ -118,6 +117,8 @@ $(document).ready(() => {
           $("#title").val(titulo);
           $("#tags").val(tags);
           $("#image").val(imagen);
+          $("#userName").val(userName);
+          $("#userAvatar").val(userAvatar);
           quill.setContents(delta, "silent");
         }
       } catch (error) {
@@ -172,12 +173,13 @@ $(document).ready(() => {
         return;
       }
       let postObject = {
-        userId: "",
+        userName: $("#userName").val(),
+        userAvatar:$("#userAvatar").val(),
         titulo: $("#title").val(),
         tags: $("#tags").val(),
         imagen: $("#image").val(),
-        minutosLectura: 6,
-        contenido: $("#editor").html(),
+        minutosLectura: readingTime("editor"),
+        contenido: $("#editor .ql-editor").html(),
       };
       editPost(postObject);
     });

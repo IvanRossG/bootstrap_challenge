@@ -80,9 +80,9 @@ const printPosts = (objPosts) => {
 
 const getPost = async (postId) => {
   let post = await $.get(`https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`)
-  printKoder(post)
+  printPost2(post)
 }
-const printKoder = (objPost) => {
+const printPost2 = (objPost) => {
   let acc = '';
   let tagsList = document.querySelector('.tags-list')
   $('img.header-img').attr('src',objPost.imagen);
