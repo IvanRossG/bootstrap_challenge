@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-main.new-post{
-  .editor-container{
-    .editor-post{
-      height: 50vh;
-    }
-  }
-=======
 main.new-post{
   font-family: 'Roboto', sans-serif;
+
+
   
   form{
     background-color: rgb(255, 255, 255);
@@ -46,5 +40,10 @@ main.new-post{
       height: 50vh;
     }
   }
->>>>>>> b64b8a527a87c97d889108c4c3d4223ebccdb63d
 }
+div.editor-test{
+  position: absolute;
+  right: 310px;
+}
+
+
