@@ -26,21 +26,21 @@ $(document).ready(() => {
 
   //Codigo que corresponda al INDEX
   if (
-    window.location.pathname === "/bootstrap_challenge/index.html" ||
-    window.location.pathname === "//bootstrap_challenge/"
+    window.location.pathname === "/index.html" ||
+    window.location.pathname === "/"
   ) {
     getAllPosts();
   }
 
   //Codigo que corresponda al POST
-  if (window.location.pathname === "/bootstrap_challenge/post.html") {
+  if (window.location.pathname === "/post.html") {
     let searchParameter = window.location.search;
     const idPost = searchParameter.slice(searchParameter.indexOf("=") + 1);
     getPost(idPost);
   }
 
   //Codigo que corresponda a CREAR POST
-  if (window.location.pathname === "/bootstrap_challenge/createpost.html") {
+  if (window.location.pathname === "/createpost.html") {
     let user, avatar;
     var quill = new Quill("#editor", {
       theme: "snow",
@@ -85,7 +85,7 @@ $(document).ready(() => {
     });
 
     //Codigo que corresponda a EDIT POST
-    if (window.location.pathname === "/bootstrap_challenge/editpost.html") {
+    if (window.location.pathname === "/editpost.html") {
       // console.log("Estoy en Edit Post");
       const quill = new Quill("#editor", {
         theme: "snow",
