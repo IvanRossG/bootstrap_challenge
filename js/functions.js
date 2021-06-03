@@ -76,3 +76,27 @@ const printPosts = (objPosts) => {
   }
   $('main').append(acc)
 }
+
+const getPost = async (postId) => {
+  let post = await $.get(`https://python-2g-challenge-default-rtdb.firebaseio.com/post/${postId}.json`)
+  printKoder(post)
+}
+const printKoder = (objPost) => {
+  let acc = '';
+  let tagsList = document.querySelector('.tags-list')
+  $('img.header-img').attr('src',objPost.imagen);
+  $('.post-header .post-title').text(objPost.titulo);
+  objPost.tags.split(",").forEach( tag => {
+    acc += `
+      <li class="nav-item">
+        <a class="${tag}-hashtag nav-link mx-1 px-1 py-1" href="#">#${tag}</a>
+      </li>
+    `
+  })
+  $('.tags-list').html(acc)
+  $('.author a img').attr('src',objPost.userAvatar)
+  $('.author .author-data .author-link strong').text(objPost.userName)
+  $('.author .author-data .date-link').text(objPost.fechaCreacion)
+  $('.author .author-data .time-link').text(`${objPost.minutosLectura} min read`)
+  $('.post-content').html(objPost.contenido)
+}

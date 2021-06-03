@@ -500,6 +500,10 @@ main.selected-post .container-fluid .row .container .row section.post-header .au
   font-size: 14px;
 }
 
+main.selected-post .container-fluid .row .container .row section.post-content img {
+  max-width: 100%;
+}
+
 main.selected-post .container-fluid .row .container .row section.post-content h2 {
   font-size: 32px;
 }

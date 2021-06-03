@@ -18,43 +18,18 @@ var users=[
 ]
 
 $(document).ready(() => {
-  console.log('jquery cargado')
   //Aqui agregaremos todas las llamadas a funciones y metodos que ocupemos en cada seccion y pagina
   
   //Codigo que corresponda al INDEX
   if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    getAllPosts()
-    
+    getAllPosts() 
   }
   
-  
-  // let allkeys = Object.keys(rFirebase)
-  // let acc
-  // allkeys.reverse().forEach(function(key){
-  //     acc+= `
-  //         <p>${rFirebase[key].title}</p>
-  //         <p>${rFirebase[key].tags}</p>
-  //         <p>${rFirebase[key].nameUser}</p>
-  //         <p>${rFirebase[key].userImgUrl}</p>
-  //         <p>${rFirebase[key].minToRead}</p>
-  //     `
-  // })
-
-  // let rFirebase = {
-  //     key: {},
-  //     key: {},
-  //     key: {}
-  // }
-
-
   //Codigo que corresponda al POST
   if (window.location.pathname === '/post.html') {
-    console.log('Estoy en el POST')
-
-
-    // Su codigo aqui
-
-
+    let searchParameter = window.location.search;
+    const idPost = searchParameter.slice(searchParameter.indexOf('=')+1)
+    getPost(idPost)
   }
 
   //Codigo que corresponda a CREAR POST
@@ -88,10 +63,9 @@ $(document).ready(() => {
         imagen: $('#image').val(),
         minutosLectura: 6,
         fechaCreacion: currentDate,
-        contenido: $('#editor').html()
+        contenido: $('#editor .ql-editor').html()
         
       }
-      console.log(postObject)
       uploadPost(postObject)
     })
 
