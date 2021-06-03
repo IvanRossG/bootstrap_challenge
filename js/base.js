@@ -23,13 +23,29 @@ $(document).ready(() => {
   
   //Codigo que corresponda al INDEX
   if (window.location.pathname === '/index.html' || window.location.pathname === '/') {
-    console.log('Estoy en el index')
-
-
-    // Su codigo aqui
-
-
+    getAllPosts()
+    
   }
+  
+  
+  // let allkeys = Object.keys(rFirebase)
+  // let acc
+  // allkeys.reverse().forEach(function(key){
+  //     acc+= `
+  //         <p>${rFirebase[key].title}</p>
+  //         <p>${rFirebase[key].tags}</p>
+  //         <p>${rFirebase[key].nameUser}</p>
+  //         <p>${rFirebase[key].userImgUrl}</p>
+  //         <p>${rFirebase[key].minToRead}</p>
+  //     `
+  // })
+
+  // let rFirebase = {
+  //     key: {},
+  //     key: {},
+  //     key: {}
+  // }
+
 
   //Codigo que corresponda al POST
   if (window.location.pathname === '/post.html') {
