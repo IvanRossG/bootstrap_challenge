@@ -55,13 +55,14 @@ $(document).ready(() => {
       if ($('#title').val() === '' || $('#image').val()=== '' || $('#editor').html() === '') {
         return
       }
+      let minutesRead = readingTime('editor')
       let postObject = {
         userName: user,
         userAvatar: avatar,
         titulo: $('#title').val(),
         tags: $('#tags').val(),
         imagen: $('#image').val(),
-        minutosLectura: 6,
+        minutosLectura: minutesRead,
         fechaCreacion: currentDate,
         contenido: $('#editor .ql-editor').html()
         

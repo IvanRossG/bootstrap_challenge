@@ -103,3 +103,11 @@ const printKoder = (objPost) => {
   $('section.side-profile .profile-name').text(objPost.userName)
   $('section.profile-card-two .card-header h7 .profile-link').text(objPost.userName)
 }
+
+const readingTime = (containerId) => {
+  const text = document.getElementById(containerId).innerHTML;
+  const wpm = 225;
+  const words = text.trim().split(/\s+/).length;
+  const time = Math.ceil(words / wpm);
+  return time
+}
