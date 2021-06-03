@@ -99,4 +99,7 @@ const printKoder = (objPost) => {
   $('.author .author-data .date-link').text(objPost.fechaCreacion)
   $('.author .author-data .time-link').text(`${objPost.minutosLectura} min read`)
   $('.post-content').html(objPost.contenido)
+  $('section.side-profile .avatar-mainavatar img').attr('src',objPost.userAvatar)
+  $('section.side-profile .profile-name').text(objPost.userName)
+  $('section.profile-card-two .card-header h7 .profile-link').text(objPost.userName)
 }
