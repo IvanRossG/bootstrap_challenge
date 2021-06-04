@@ -49,7 +49,7 @@ const printPosts = (objPosts) => {
               alt="avatar-name" class="avatar"></a>
           <div>
             <a class="author-link" href="">${objPosts[post].userName}</a>
-            <a class="date-link">Apr 29(1 day ago)</a>
+            <a class="date-link">${objPosts[post].fechaCreacion}</a>
           </div>
         </div>
         <a class="post-link" href="./post.html?idpost=${post}">
