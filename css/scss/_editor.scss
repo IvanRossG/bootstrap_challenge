@@ -41,9 +41,11 @@ main.new-post{
     }
   }
 }
-div.editor-test{
-  position: absolute;
-  right: 310px;
+@media screen and (min-width: 992px){
+  .editor-test{
+    position: absolute;
+    right: 310px;
+  }
 }
 
 
