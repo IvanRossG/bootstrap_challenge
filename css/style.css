@@ -754,8 +754,10 @@ main.new-post .editor-container .editor-post {
   height: 50vh;
 }
 
-div.editor-test {
-  position: absolute;
-  right: 310px;
+@media screen and (min-width: 992px) {
+  .editor-test {
+    position: absolute;
+    right: 310px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
