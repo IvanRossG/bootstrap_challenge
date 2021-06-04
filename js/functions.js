@@ -68,7 +68,7 @@ const printPosts = (objPosts) => {
               <span class="d-none d-md-inline mx-2">comments</span> </a>
           </div>
           <div>
-          <a class=“time-link” href=“./post.html?idpost=${post}“>${objPosts[post].minutosLectura} min read</a>
+          <a class="time-link" href=`./post.html?idpost=${post}`>${objPosts[post].minutosLectura} min read</a>
             <button class="save">Save</button>
           </div>
         </div>
